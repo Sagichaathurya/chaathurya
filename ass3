@@ -1,0 +1,9 @@
+sname=int(input("enter student name:"));sno=int(input("enter student number:"));
+group=int(input("enter student group:"))
+s1=int(input("enter coding marks:"))
+s2=int(input("enter operating system marks:"))
+s3=int(input("enter java marks:"))
+if(s1>=40 and s2>=40 and s3>=40):
+      print(" the studen is pass")
+else:
+      print("the studen is fail")
