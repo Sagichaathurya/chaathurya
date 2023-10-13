@@ -1,0 +1,30 @@
+jeans=1000
+shirt=450
+skirt=700
+print("*****WELCOME TO ADITYA SHOPING MALL*****")
+cname=input("enter customer name:")
+cphno=input("enter customer number:")
+jeansq=input("enter no of jeanss:")
+shirtq=input("enter no of shirts:")
+skirtq=input("enter no of skirts:")
+bill=("jeans*jeansq")+("shirt*shirtq")+("skirt*skirtq")
+
+if(bill>=2000):
+    disc=bill*20/100
+elif(bill>=1000):
+    disc=bill*10/100
+elif(bill>=500):
+    disc=bill*5/100
+else:(disc==bill*3/100)
+tbill=bill-dic
+gst=tbill+12/100
+obill=tbill+gst
+print=("customer name:",cname)
+print=("customer phno:",cphno)
+print=("bill:",bill)
+print=("discount:",disc)
+print=("gst 12%:",gst)
+print=("bill to be paid:",obill)
+print=("***THANK YOU,VISIT AGAIN***")
+
+                     
