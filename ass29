@@ -1,0 +1,25 @@
+WAY-1
+l = list(map(int, input().split()))
+m = list(map(int, input().split()))
+l.extend(m)
+print(min(l))
+
+WAY-2
+l=[]
+m=[]
+s=input().split()#4 5 6 7 8 9 2 3
+for i in s:
+    l.append(int(i))#l=[4,5,6,7,8,9,2,3],after append [4,5,6,7,8,9,2,3,4,7,]
+s=input().split()#4 7 2 3 15 4 8
+for i in s:         #   0 1 2 3 4  5 6
+    m.append(int(i))#m=[4,7,2,3,15,4,8]
+size1=len(l)#8
+size2=len(m)#7
+for i in range(0,size2):#i=0<7
+    l.append(m[i])
+
+minn=l[0]
+for i in l:
+    if i<minn:
+        minn=i
+print(minn)
